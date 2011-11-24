@@ -1,0 +1,17 @@
+Instructions to set up the server :
+
+1. install node
+2. install npm (newer versions of node come with npm pre-installed)
+3. install the required modules from those provided in the node_modules folder using npm
+
+To run server :
+cd NodeScraper
+node nodescraper.js
+
+The application will use port 8080.
+
+The server responds to incoming requests and responds with the live cricket updates.
+
+To test :
+open browser
+goto http://127.0.0.1:8080/
