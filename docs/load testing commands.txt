@@ -1,0 +1,10 @@
+ps -ax
+top
+
+kill -9 8150
+
+/usr/sbin/
+httpd -k stop
+
+>: ab -n 15000 -c 100 http://127.0.0.1:8080/
+

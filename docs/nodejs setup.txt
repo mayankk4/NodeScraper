@@ -1,0 +1,38 @@
+Working with node.js
+
+Installation :
+
+install xcode for enabling make
+
+
+install node.js
+    configure make
+    manke install
+        node hello.js
+            var http = require('http');
+            var sys = require('sys');
+            
+            http.createServer(function (req, res) {
+              res.writeHead(200, {'Content-Type': 'text/plain'});
+              res.end('Hello World!\n');
+            }).listen(1337, "127.0.0.1");
+            console.log('Server running at http://127.0.0.1:1337/');
+
+install npm
+    >: curl http://npmjs.org/install.sh | sudo sh
+
+install node.io
+>: sudo npm install node.io
+>: node_modules/node.io/bin/node.io -s test.js
+
+where test.js is :
+    var nodeio = require('node.io');
+    exports.job = new nodeio.Job({
+        input: false,
+        run: function () {
+            this.emit('Hello World!');
+        }
+    });
+
+Install express.js
+>: sudo npm install express
